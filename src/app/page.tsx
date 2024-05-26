@@ -2,13 +2,28 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-indigo-300 from-30% via-sky-300 via-70% to-green-200 to-90%">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none"></div>
+    <main className="flex min-h-screen flex-col items-center justify-between gap-24 p-24 pt-8 bg-gradient-to-b from-indigo-300 from-30% via-sky-300 via-70% to-green-200 to-90%">
+      <div className="flex justify-between items-center w-full p-4 backdrop-blur-lg backdrop-saturate-200 opacity-75 rounded-lg border-white/25 bg-white/15 bg-gradient-to-br from-white/10 to-white/100">
+        <h1 className="font-extrabold text-4xl text-white tracking-wide drop-shadow-xl">
+          CopilotVerse.IO
+        </h1>
+        <div className="cursor-pointer hover:rounded-lg hover: border">
+          Explore Copilots
+        </div>
       </div>
 
-      <div className="backdrop-blur-lg backdrop-saturate-200 opacity-75 p-24 rounded-lg border-white/25 bg-white/15">
-        <h1 className="font-mono font-extrabold text-4xl text-white">CopilotVerse.IO</h1>
+      <div className="flex items-center gap-10 w-full p-4">
+        <h1 className="w-1/2 text-5xl leading-[5rem] font-extrabold text-transparent bg-gradient-to-br from-white via-white/1 to-white/60 bg-clip-text">
+          Find universe of copilot to enhance your productivity, efficiency
+        </h1>
+        <Image
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-1/2"
+          src="/aitheme2-bg-transparent.png"
+          alt="Next.js Logo"
+          priority
+          width={300}
+          height={200}
+        />
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
@@ -18,7 +33,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold text-white">
             Github Copilot
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -35,7 +50,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold text-white">
             Copilot Workspace
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -52,7 +67,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold text-white">
             Copilot Studio
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -70,7 +85,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
+          <h2 className="mb-3 text-2xl font-semibold text-white">
             Github Copilot Extensions
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
